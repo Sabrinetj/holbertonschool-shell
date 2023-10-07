@@ -1,2 +1,2 @@
 #!/bin/bas
-rsync
+cp -u *.html . ./
