@@ -1,9 +1,2 @@
-#!/bin/bash
-# Set the source directory to the current working directory
-source_dir="$(pwd)"
-
-# Set the destination directory to the parent of the working directory
-dest_dir="$(dirname "$source_dir")"
-
-# Use rsync to copy only newer or non-existing HTML files from the source to the destination
-rsync -av --ignore-existing --include='*.html' --exclude='*' "$source_dir/" "$dest_dir/"
+#!/bin/bas
+rsync -av --update --ignore-existing --include="*.html" --exclude="*" "$PWD/" "../"
