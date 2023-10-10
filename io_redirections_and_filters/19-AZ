@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "votre_texte" | tr 'Ac' 'Ze'
+| tr 'Ac' 'Ze'
